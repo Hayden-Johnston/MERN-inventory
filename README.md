@@ -7,3 +7,7 @@ Express
 React
 Node.js
 
+In progress:
+Convert add and edit pages to table layouts similar to display page
+CSS spacing
+date input 
