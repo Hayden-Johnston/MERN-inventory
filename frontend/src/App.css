@@ -1,0 +1,94 @@
+
+:root {
+    --background-color: #F9FCFE;      /* Light Blue-Gray */
+    --primary-color: #4b6584;         /* Blue-Gray */
+    --secondary-color: #D3ECFE;       /* Pale Gray */
+    --tertiary-color: #0089F9;        /* Blue */
+    --accent-color: #ff5252;          /* Red */
+    --text-color: #333333;            /* Dark Gray */
+    --alpha: rgba(0,0,0,0);           /* Alpha Channel */
+  }
+
+/* Center the body in the middle of the viewport 
+by defining min and max widths with auto right/left margins
+*/
+body {
+background-color: var(--background-color);
+color: var(--primary-color);
+font-family: Arial, sans-serif;
+margin:0 auto;
+width:500px;
+/* border:1px solid gray; */
+padding:4%;
+}
+
+header, main, article, footer {
+border-bottom:2px solid gray;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {text-align: center}
+
+/* NAVIGATION
+Simple changes to make anchors look like buttons. 
+*/
+nav {
+text-decoration:none;
+background-color:var(--alpha);
+margin:20px;
+padding:1%;
+text-align: center;
+}
+nav a {
+background-color:var(--primary-color);
+border:2px solid var(--near-black);
+border-radius:5px 5px 5px 5px; 
+color:var(--background-color);
+font-size:1.1em;
+font-weight:bold;
+margin-right:3px;
+padding: 3px 20px 5px 20px;
+text-decoration:none;;
+}
+  nav a:hover {
+color: var(--tertiary-color);
+text-decoration:none;
+}
+.nav-icon:hover {
+color: var(--tertiary-color);
+}
+/* TABLE */
+table {
+border:1px solid gray;
+border-collapse: collapse;
+width: 100%;
+}
+table td {
+padding: 10px;
+text-align: center;
+}
+
+table th {
+background-color: var(--primary-color);
+color: var(--background-color);
+height: 50px;
+}
+
+table tr:nth-child(even) {
+background-color: var(--secondary-color);
+}
+
+caption {}
+tr td, td th {border-bottom:1px dotted whitesmoke;}
+tr:nth-child(even){}
+th {}
+
+
+/* FORM */
+fieldset {}
+legend {}
+label {display:block;margin-top:3%;}
+input {}
+button {}
+button:hover {}
+
