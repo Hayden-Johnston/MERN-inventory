@@ -1,4 +1,4 @@
-# MERN Inventory
+# MERN Game Inventory
 
 Track inventory for a game shop or personal collection.
 Made with:
@@ -11,6 +11,6 @@ Made with:
 | Node.js |
 
 In progress:
-Convert add and edit pages to table layouts similar to display page
-CSS spacing
-date input 
+Convert add and edit pages to table layouts similar to display page <br>
+CSS spacing <br>
+date input <br>
