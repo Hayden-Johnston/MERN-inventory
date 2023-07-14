@@ -1,11 +1,14 @@
-# MERN-stocklist
+# MERN Inventory
 
 Track inventory for a game shop or personal collection.
 Made with:
-MongoDB
-Express
-React
-Node.js
+
+|  Stack  |
+| ------- |
+| MongoDB |
+| Express |
+| React |
+| Node.js |
 
 In progress:
 Convert add and edit pages to table layouts similar to display page
