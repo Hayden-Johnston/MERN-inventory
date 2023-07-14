@@ -1,6 +1,6 @@
 # MERN Game Inventory
 
-Track inventory for a game shop or personal collection.
+Track inventory for a game shop or personal collection. <br>
 Made with:
 
 |  Stack  |
