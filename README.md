@@ -10,7 +10,7 @@ Made with:
 | React |
 | Node.js |
 
-In progress:
+In progress: <br>
 Convert add and edit pages to table layouts similar to display page <br>
 CSS spacing <br>
 date input <br>
