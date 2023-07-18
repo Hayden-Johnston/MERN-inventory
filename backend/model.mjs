@@ -24,7 +24,7 @@ const gameSchema = mongoose.Schema({
     genre:    { type: String, required: true },
     platform: { type: String, required: true },
 	year:     { type: Number, required: true },
-    added:    { type: Date, default: Date.now },
+    added:    { type: Date, required: true, default: Date.now },
 });
 
 // Compile the model from the schema.
