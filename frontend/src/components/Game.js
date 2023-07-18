@@ -8,7 +8,7 @@ function Game({ game, onEdit, onDelete }) {
             <td>{game.genre}</td>
             <td>{game.platform}</td>
             <td>{game.year}</td>
-            <td>{game.added}</td>
+            <td>{game.added.slice(0, 10)}</td>
             <td><FaTrash onClick={() => onDelete(game._id)} /></td>
             <td><FaEdit onClick={() => onEdit(game)} /></td>
             <td></td>
