@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import Components, styles, media
 import './App.css';
+import Navigation from './components/Navigation.js';
 
 // Import Pages
 import HomePage from './pages/HomePage';
@@ -20,9 +21,9 @@ function App() {
       <BrowserRouter>
 
           <header>
-            <h1>Game Stock</h1>
+            <h1>Game Inventory</h1>
           </header>
-
+          <Navigation />
           <main>
             <section>
                 <Routes> 
