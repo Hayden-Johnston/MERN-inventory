@@ -17,14 +17,11 @@ background-color: var(--background-color);
 color: var(--primary-color);
 font-family: Arial, sans-serif;
 margin:0 auto;
-width:500px;
+width:80%;
 /* border:1px solid gray; */
 padding:4%;
 }
 
-header, main, article, footer {
-border-bottom:2px solid gray;
-}
 
 /* Typography */
 h1,h2,h3,h4,h5,h6 {text-align: center}
@@ -61,14 +58,19 @@ color: var(--tertiary-color);
 table {
 border:1px solid gray;
 border-collapse: collapse;
-width: 100%;
+width: 80%;
+margin: 0 auto;
 }
 table td {
-padding: 10px;
+padding: 15px;
+margin: 0 auto;
 text-align: center;
 }
 
 table th {
+padding-right: 20px;
+padding-left: 20px;
+text-align: center;
 background-color: var(--primary-color);
 color: var(--background-color);
 height: 50px;
@@ -77,11 +79,6 @@ height: 50px;
 table tr:nth-child(even) {
 background-color: var(--secondary-color);
 }
-
-caption {}
-tr td, td th {border-bottom:1px dotted whitesmoke;}
-tr:nth-child(even){}
-th {}
 
 
 /* FORM */
