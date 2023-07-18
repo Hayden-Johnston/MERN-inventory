@@ -1,14 +1,13 @@
 import React, { useState }  from 'react';
 import { useNavigate } from "react-router-dom";
-import Navigation from '../components/Navigation';
 
 export const EditGamePage = ({ gameToEdit }) => {
  
-    const [title, setTitle]       = useState('');
-    const [genre, setGenre]       = useState('');
-    const [platform, setPlatform] = useState('');
-    const [year, setYear]         = useState('');
-    const [added, setAdded]       = useState('');
+    const [title, setTitle]       = useState(gameToEdit.title);
+    const [genre, setGenre]       = useState(gameToEdit.genre);
+    const [platform, setPlatform] = useState(gameToEdit.platform);
+    const [year, setYear]         = useState(gameToEdit.year);
+    const [added, setAdded]       = useState(gameToEdit.added);
     
     const redirect = useNavigate();
 
@@ -37,7 +36,6 @@ export const EditGamePage = ({ gameToEdit }) => {
 
     return (
         <>
-        <Navigation />
         <article>
             <h2>Edit Game</h2>
             <form onSubmit={(e) => { e.preventDefault();}}>
@@ -52,34 +50,30 @@ export const EditGamePage = ({ gameToEdit }) => {
                     <label for="genre">Genre:</label>
                     <input
                         type="text"
-                        placeholder="Genre"
                         value={genre}
                         onChange={e => setGenre(e.target.value)} 
-                        id="title" />
+                        id="genre" />
 
                     <label for="platform">Platform:</label>
                     <input
                         type="text"
-                        placeholder="Platform"
                         value={platform}
                         onChange={e => setPlatform(e.target.value)} 
-                        id="title" />
+                        id="platform" />
                     
                     <label for="year">Year released:</label>
                     <input
                         type="number"
                         value={year}
-                        placeholder="Year released"
                         onChange={e => setYear(e.target.value)} 
                         id="year" />
 
                     <label for="added">Date added:</label>
                     <input
                         type="text"
-                        placeholder="Date added"
                         value={added}
                         onChange={e => setAdded(e.target.value)} 
-                        id="language" />
+                        id="added" />
 
                     <label for="submit">
                     <button

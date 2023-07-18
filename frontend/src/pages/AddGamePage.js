@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import Navigation from '../components/Navigation';
 
 export const AddGamePage = () => {
 
@@ -33,7 +32,6 @@ export const AddGamePage = () => {
 
     return (
         <>
-        <Navigation />
         <article>
             <h2>Add Game</h2>
             <form onSubmit={(e) => { e.preventDefault();}}>
@@ -42,7 +40,7 @@ export const AddGamePage = () => {
                     <input
                         type="text"
                         placeholder="Title"
-                        value={title}
+                        defaultValue={title}
                         onChange={e => setTitle(e.target.value)} 
                         id="title" />
 
