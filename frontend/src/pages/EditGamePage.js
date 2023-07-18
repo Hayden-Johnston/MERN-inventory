@@ -1,5 +1,6 @@
 import React, { useState }  from 'react';
 import { useNavigate } from "react-router-dom";
+import { FaPlus } from "react-icons/fa";
 
 export const EditGamePage = ({ gameToEdit }) => {
  
@@ -38,50 +39,66 @@ export const EditGamePage = ({ gameToEdit }) => {
         <>
         <article>
             <h2>Edit Game</h2>
-            <form onSubmit={(e) => { e.preventDefault();}}>
-                <fieldset>
-                    <label for="title">Game title</label>
-                    <input
-                        type="text"
-                        value={title}
-                        onChange={e => setTitle(e.target.value)} 
-                        id="title" />
-                    
-                    <label for="genre">Genre:</label>
-                    <input
-                        type="text"
-                        value={genre}
-                        onChange={e => setGenre(e.target.value)} 
-                        id="genre" />
-
-                    <label for="platform">Platform:</label>
-                    <input
-                        type="text"
-                        value={platform}
-                        onChange={e => setPlatform(e.target.value)} 
-                        id="platform" />
-                    
-                    <label for="year">Year released:</label>
-                    <input
-                        type="number"
-                        value={year}
-                        onChange={e => setYear(e.target.value)} 
-                        id="year" />
-
-                    <label for="added">Date added:</label>
-                    <input
-                        type="date"
-                        value={added}
-                        onChange={e => setAdded(e.target.value)} 
-                        id="added" />
-
-                    <label for="submit">
-                    <button
-                        onClick={editGame}
-                        id="submit"
-                    >Save</button> updates to the collection</label>
-                </fieldset>
-                </form>
+            <table>
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Platform</th>
+                    <th>Year</th>
+                    <th>Added</th>
+                    <th><div>
+                        <FaPlus className="nav-icon" onClick={ () => redirect("/create")}/>
+                        </div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input
+                                type="text"
+                                value={title}
+                                onChange={e => setTitle(e.target.value)} 
+                                id="title" /> 
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                value={genre}
+                                onChange={e => setGenre(e.target.value)} 
+                                id="genre" />
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                value={platform}
+                                onChange={e => setPlatform(e.target.value)} 
+                                id="platform" />
+                        </td>
+                        <td>
+                            <input
+                                type="number"
+                                value={year}
+                                onChange={e => setYear(e.target.value)} 
+                                id="year" />
+                        </td>
+                        <td>
+                            <input
+                                type="date"
+                                value={added}
+                                onChange={e => setAdded(e.target.value)} 
+                                id="added" />
+                        </td>
+                        <td>
+                            <button
+                                onClick={editGame}
+                                id="submit"
+                                >Save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             </article>
         </>
     );
