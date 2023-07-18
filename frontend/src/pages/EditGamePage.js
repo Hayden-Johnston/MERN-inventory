@@ -70,7 +70,7 @@ export const EditGamePage = ({ gameToEdit }) => {
 
                     <label for="added">Date added:</label>
                     <input
-                        type="text"
+                        type="date"
                         value={added}
                         onChange={e => setAdded(e.target.value)} 
                         id="added" />

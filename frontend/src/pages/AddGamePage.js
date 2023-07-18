@@ -50,7 +50,7 @@ export const AddGamePage = () => {
                         placeholder="Genre"
                         value={genre}
                         onChange={e => setGenre(e.target.value)} 
-                        id="title" />
+                        id="genre" />
 
                     <label for="platform">Platform:</label>
                     <input
@@ -58,7 +58,7 @@ export const AddGamePage = () => {
                         placeholder="Platform"
                         value={platform}
                         onChange={e => setPlatform(e.target.value)} 
-                        id="title" />
+                        id="platform" />
                     
                     <label for="year">Year released:</label>
                     <input
@@ -70,11 +70,11 @@ export const AddGamePage = () => {
 
                     <label for="added">Date added:</label>
                     <input
-                        type="text"
+                        type="date"
                         placeholder="Date added"
                         value={added}
                         onChange={e => setAdded(e.target.value)} 
-                        id="language" />
+                        id="added" />
 
                     <label for="submit">
                     <button
