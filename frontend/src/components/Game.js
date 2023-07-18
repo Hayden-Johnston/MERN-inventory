@@ -4,7 +4,7 @@ import { FaTrash, FaEdit } from 'react-icons/fa';
 function Game({ game, onEdit, onDelete }) {
     return (
         <tr>
-            <td>{game.title}</td>
+            <td style={{whiteSpace: 'nowrap'}}>{game.title}</td>
             <td>{game.genre}</td>
             <td>{game.platform}</td>
             <td>{game.year}</td>
