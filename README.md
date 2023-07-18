@@ -12,5 +12,4 @@ Track inventory for a game shop or personal collection. <br>
 
 In progress: <br>
 Convert add and edit pages to table layouts similar to display page <br>
-CSS spacing <br>
 date input <br>
