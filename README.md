@@ -1,6 +1,6 @@
 # MERN Game Inventory
 
-Track inventory for a game shop or personal collection with responsive CSS design. <br>
+Single page web application to track inventory for a game shop or personal collection with responsive CSS design. <br>
 Fill MongoDB connect string in backend/.env to use.
 
 
